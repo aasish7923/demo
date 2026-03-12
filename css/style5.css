@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(80, 70, 70);
+}
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+    /* transition-property: all; */
+    /* transition-duration: 0.6s; */
+    transition: all 2s ease-in 0s;
+}
+#box1:hover{
+    background-color: #f00;
+    transform: rotateY(98324723987deg);
+}
+#box1:active{
+    background-color: #fff;
+}
+#fanaxis{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    left: 145px;
+    top:133px;
+    border-radius: 50%;
+    display: inline;
+    z-index: 0;
+    background-color: #000;}
+#fan{
+    height: 90px;
+    width: 10px;
+    z-index: 1;
+    position: fixed;
+    left: 150px;
+    display: inline;
+    background-color: #000;
+    transition: all 100s ease-in 0s;
+}
+#fan:hover{
+    transform: rotate(98324723987deg);
+}
+#volume{
+    height:10px;
+    width: 100px;
+    border-radius: 5mm;
+    border: 1px solid rgba(1,1,0);
+    margin-bottom: 1px;
+}
+#volumeball{
+    height:9px;
+    width: 9px;
+    border-radius: 50%;
+    border: 1px solid rgba(1,1,0,0.7);
+    background-color: #52cb29;
+    animation: volume 2s ease-in-out 0s infinite alternate;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+    animation: coloranimate 2s ease-in-out 0s infinite alternate;
+
+}
+@keyframes coloranimate{
+        from{background-color:aqua;}
+        to { background-color: red;}
+}
+@keyframes volume{
+        from{transform:translateX(0px);
+             background-color:aqua;}
+        to { transform:translateX(90px);
+             background-color: red;}
+}
+@keyframes volbag{
+        from{transform:translateX(4.5px);
+             background-color:aqua;}
+        to { transform:translateX(85.5px);
+             background-color: red;}
+}
+#loader{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border:6px solid #525252;
+    border-top: 6px solid #fff;
+    animation: load 2s linear 0s infinite normal;
+}
+@keyframes load{
+    0%{transform: rotate(0deg);}
+
+    100%{transform: rotate(360deg);}
+}
+
+.icon{
+    display: flex;
+    height: 15px;
+    width: 35px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: grey;
+    justify-content: flex-start;
+}
+.ball{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #c9c3c3;
+    transition: all .1s linear;
+    animation: ball 0.1s linear 0s 1 normal;
+}
+.ball:active{
+    background-color: #fff;
+    transform: translateX(20px);}
+
+
+.icon:active{
+    background-color: rgb(51, 51, 240);
+}
+

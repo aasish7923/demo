@@ -1,0 +1,25 @@
+.title {
+  text-align: center;
+  font-family: cursive;
+  font-weight: 500;
+}
+body {
+  background-color: yellow;
+}
+.keep {
+  font-size: 9px;
+}
+.logo {
+  max-height: 44px;
+}
+#name {
+  min-width: 355px;
+  height: 30px;
+}
+#label{
+    text-align: left;
+}
+#button {
+  height: 38px;
+  width: 110;
+}

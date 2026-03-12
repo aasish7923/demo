@@ -1,0 +1,26 @@
+*{
+    font-family: arial, roboto;
+    text-align: center;
+}
+h1 {
+  color: green;
+  font-weight: bolder;
+}
+
+#heading1 {
+    color : teal;
+}
+
+.myclass{
+    background-color: rgb(122, 122, 226);
+}
+p{
+    line-height: 67px;
+}
+
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}

@@ -1,0 +1,147 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+p{
+    display: inline-block;
+    margin: 0;
+}
+div{
+    display: inline-block;
+}
+.checkbox{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 600px;
+    background: linear-gradient(to top, white, #2e2929);
+    background-repeat: no-repeat;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 190px;
+}
+#container{
+    width: auto;
+    height: 50px;
+    top: 75px;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 3mm;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height:35px;
+    margin: 0 10px 0 10px;
+}
+#hover{
+    transition: all 0.05s linear 0s;
+}
+#hover:hover{
+    transform-origin: bottom;
+    transform: scale(2);
+}
+i{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+label{
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+    width: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color:  rgba(0,0,0,0.6);
+    margin-top: 10px;
+    position: fixed;
+    top: 125px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item label{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease;
+}
+.item:hover label{
+    opacity: 1;
+    visibility: visible;
+}
+#container2{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+#addremove{
+    height: 400px;
+    text-align: center;
+    width: 400px;
+    background: linear-gradient(to bottom, rgba(34, 32, 32, 0.5), #989292);
+    border: 1px solid white;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: flex;
+    flex-direction: row;
+}
+#add, #remove{
+        width:180px;
+        margin-right: 20px;
+}
+.but{
+    width: 180px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to left, rgba(14, 14, 250, .8),
+                            rgba(254, 17, 127, .8));
+    border-radius: 4mm;
+    box-shadow: none;
+    margin: 10px;
+    height: 30px;
+    align-self: center;
+    justify-self: end;
+    position:relative;
+    /* top: 350px; */
+}
+.but:hover{
+    background: linear-gradient(to left, rgba(14, 14, 250,1),
+                                rgba(254, 17, 127,1));
+}
+#icons{
+    position: relative;
+    width: 180px;
+    height: 330px;
+    margin: 10px;
+    border: 1px solid rgb(154, 131, 131);
+    border: 0px 1px 0px 1px;
+}
+#text{
+    width: 400px;
+    height:18px;
+    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #4d4a4a;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+

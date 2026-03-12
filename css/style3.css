@@ -1,0 +1,40 @@
+#div1{
+    width: 30px;
+    background-color: aqua;
+    font-size: 15px;
+}
+#div2{
+    background-color: rgb(161, 227, 19);
+    font-size: 2em;   /* 2 times the fontsize of parent = 2 x 15*/
+     width: 5em;        /*5 times its own font size = 5 x 2 x 15px */
+}
+
+#div3,#div4,#div5,#div6, #div7{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+}
+#div3{
+    position: static;
+    top:100px;
+}
+#div4{
+    position: relative;
+    top:100px;
+}
+#div5{
+    position: absolute;    /*now relative to body tag(ancestor) + removed from
+                             flow so div6 gets under this one*/
+      top:40px;
+}
+#div6{
+    position: fixed;
+    top:10px;
+    left:10px;
+}
+#div7{
+    position: sticky;
+    top: 0;
+}
